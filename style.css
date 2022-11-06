@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@font-face {
+    font-family: Miratrix;
+    src: url("Miratrix.otf");
+}
+
+html, body {
+    margin: 0;padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.hellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: #ffc333;
+}
+
+.title {
+    margin-top: 20px; 
+    max-width: 90%;
+    margin: 0;
+    /* font-size: 11vh; */
+    font-size: 11vw;
+    font-weight: bold;
+    line-height: .9;
+    font-family: Miratrix;
+}
+
+
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 32px 13px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 0px 32px 13px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 32px 13px rgba(0, 0, 0, 0.16);
+        padding-bottom: 1rem;
+    overflow: hidden;
+}
+.card img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    -o-object-fit: cover;
+        object-fit: cover;
+    max-height: max(10rem, 30vh);
+}
+.card img ~ * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.card > :last-child {
+    margin-bottom: 0;
+}
+
+.blog-posts {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    color: #444;
+    background-color: #4b4b4b;
+}
+
+.card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.card a, .card a:hover, .card a:link, .card a:visited, .card a:focus, .card a:checked {
+    color: inherit;
+}
+
+.card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 90vw;
+    width: 120ch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
